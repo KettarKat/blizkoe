@@ -179,6 +179,9 @@
   width: 100%;
   min-height: 439px;
   background-color: $i-green;
+  &:hover {
+    background-color: #cdf0c1;
+  }
 }
 .product__image {
   clip-path: polygon(0% 0%, 86.62% 0px, 99.86% 49.77%, 86.2% 100.23%, 0% 100%);
@@ -395,6 +398,36 @@
     left: 23px;
     font-size: 20px;
   }
+  &__btn {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 700;
+    color: $green;
+    border: 3px solid $green;
+    padding: 18px 25px;
+    border-radius: 30px;
+    background-color: transparent;
+    position: relative;
+    transition: all 0.2s;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icons/btn-shadow.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 268px;
+      height: 77px;
+      top: -6px;
+      left: -8px;
+      z-index: -1;
+      display: block;
+    }
+    &:hover {
+      color: #a1d18c;
+      border: 3px solid #a1d18c;
+    }
+  }
 }
 .img-hover {
   width: 263px;
@@ -421,14 +454,12 @@
 .fancybox-toolbar {
   display: none;
 }
-
 .fancybox-caption {
   height: 76px;
   background: $grey;
   padding: 30px;
   position: absolute;
   bottom: 0;
-
   margin: 0 auto;
 }
 .fancybox-caption__body {
@@ -438,8 +469,63 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
 }
-
 //end building section
+//start map section
+.map {
+  margin-top: 70px;
+  &__title {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__text {
+    color: $red;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 60px;
+  }
+  &__wrapper {
+    position: relative;
+  }
+  &__card {
+    background-color: #fff;
+    padding: 45px 50px;
+    max-width: 441px;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    &-title {
+      max-width: 280px;
+      font-weight: 700;
+    }
+    &-text {
+      font-size: 17px;
+      max-width: 273px;
+    }
+    &-list {
+      max-width: 320px;
+      font-size: 17px;
+      li {
+        margin-bottom: 20px;
+      }
+    }
+    &-btn {
+      background-image: url(../images/icons/green-btn.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: transparent;
+      width: 303px;
+      height: 74px;
+      text-transform: uppercase;
+      font-size: 19px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+//end map section
 
 
 

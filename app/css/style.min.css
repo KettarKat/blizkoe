@@ -92,6 +92,10 @@ body {
   line-height: 65px;
 }
 
+.green-btn {
+  color: #fff;
+}
+
 @media (max-width: 720px) {
   .container-fluid {
     padding: 0 15px;
@@ -328,6 +332,10 @@ body {
   width: 100%;
   min-height: 439px;
   background-color: #ecf9e7;
+}
+
+.product__box:hover {
+  background-color: #cdf0c1;
 }
 
 .product__image {
@@ -582,6 +590,41 @@ body {
   font-size: 20px;
 }
 
+.building__btn {
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  color: #7ea32c;
+  border: 3px solid #7ea32c;
+  padding: 18px 25px;
+  border-radius: 30px;
+  background-color: transparent;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.building__btn::before {
+  content: '';
+  position: absolute;
+  background-image: url(../images/icons/btn-shadow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 268px;
+  height: 77px;
+  top: -6px;
+  left: -8px;
+  z-index: -1;
+  display: block;
+}
+
+.building__btn:hover {
+  color: #a1d18c;
+  border: 3px solid #a1d18c;
+}
+
 .img-hover {
   width: 263px;
   height: 265px;
@@ -627,4 +670,74 @@ body {
   font-size: 17px;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 700;
+}
+
+.map {
+  margin-top: 70px;
+}
+
+.map__title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.map__text {
+  color: #c53924;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.map__wrapper {
+  position: relative;
+}
+
+.map__card {
+  background-color: #fff;
+  padding: 45px 50px;
+  max-width: 441px;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+}
+
+.map__card-title {
+  max-width: 280px;
+  font-weight: 700;
+}
+
+.map__card-text {
+  font-size: 17px;
+  max-width: 273px;
+}
+
+.map__card-list {
+  max-width: 320px;
+  font-size: 17px;
+}
+
+.map__card-list li {
+  margin-bottom: 20px;
+}
+
+.map__card-btn {
+  background-image: url(../images/icons/green-btn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  width: 303px;
+  height: 74px;
+  text-transform: uppercase;
+  font-size: 19px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
